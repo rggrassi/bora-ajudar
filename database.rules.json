@@ -1,0 +1,6 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": "auth !== null && auth.uid === '28mIK5Ct7rgMDlPU1YBENhhgz6h2'"
+  }
+}

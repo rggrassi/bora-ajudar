@@ -1,0 +1,334 @@
+[debug] [2018-10-17T17:20:58.575Z] ----------------------------------------------------------------------
+[debug] [2018-10-17T17:20:58.578Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Pichau\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve --only functions --debug
+[debug] [2018-10-17T17:20:58.578Z] CLI Version:   5.1.1
+[debug] [2018-10-17T17:20:58.579Z] Platform:      win32
+[debug] [2018-10-17T17:20:58.579Z] Node Version:  v8.11.3
+[debug] [2018-10-17T17:20:58.580Z] Time:          Wed Oct 17 2018 14:20:58 GMT-0300 (Hora oficial do Brasil)
+[debug] [2018-10-17T17:20:58.580Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-17T17:20:58.590Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-17T17:20:58.591Z] > authorizing via signed-in user
+[debug] [2018-10-17T17:20:58.591Z] [iam] checking project campanha-bora-ajudar for permissions ["firebase.projects.get"]
+[debug] [2018-10-17T17:20:58.593Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/campanha-bora-ajudar:testIamPermissions  
+
+[debug] [2018-10-17T17:21:09.265Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-17T17:21:09.267Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/campanha-bora-ajudar  
+ 
+[debug] [2018-10-17T17:21:10.357Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Pichau\workspace\bora-ajudar'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-10-17T17:21:10.958Z] Fetching environment
+[debug] [2018-10-17T17:21:10.962Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/555835654772:getServerAppConfig  
+ 
+[debug] [2018-10-17T17:21:18.629Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-17T17:21:18.630Z] Starting @google-cloud/functions-emulator
+[debug] [2018-10-17T17:21:20.163Z] Parsing function triggers
+[debug] [2018-10-17T17:22:20.111Z] Error while deploying to emulator: Error: 
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2017 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERRO: A URL requisitada não pode ser recuperada</title>
+<style type="text/css"><!-- 
+ /*
+ * Copyright (C) 1996-2017 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ */
+
+/*
+ Stylesheet for Squid Error pages
+ Adapted from design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Page basics */
+* {
+	font-family: verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('/squid-internal-static/icons/SN.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: #000000;
+}
+#titles h2 {
+	color: #000000;
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color:#00ff00;
+	width:100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: #ffffff;
+}
+
+/* General text */
+p {
+}
+
+/* error brief description */
+#error p {
+}
+
+/* some data which may have caused the problem */
+#data {
+}
+
+/* the error message received from the system or other software */
+#sysmsg {
+}
+
+pre {
+    font-family:sans-serif;
+}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+    font-family: courier;
+    color: black;
+    font-size: 10pt;
+}
+#dirlisting {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#dirlisting tr.entry td.icon,td.filename,td.size,td.date {
+    border-bottom: groove;
+}
+#dirlisting td.size {
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 9px;
+	padding-left: 10px;
+}
+
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id="ERR_CONNECT_FAIL">
+<div id="titles">
+<h1>ERRO</h1>
+<h2>A URL requisitada não pôde ser recuperada</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>O seguinte erro foi encontrado ao tentar recuperar a URL: <a href="http://localhost:5001/$discovery/rest?">http://localhost:5001/$discovery/rest?</a></p>
+
+<blockquote id="error">
+<p><b>Conexão para ::1 falhou.</b></p>
+</blockquote>
+
+<p id="sysmsg">O sistema retornou: <i>(60) Operation timed out</i></p>
+
+<p>O host ou rede remota pode estar fora do ar. Por favor, faça a requisição novamente.</p>
+
+<p>Seu administrador do cache é <a href="mailto:assist@artinfo.com.br?subject=CacheErrorInfo%20-%20ERR_CONNECT_FAIL&amp;body=CacheHost%3A%20localhost%0D%0AErrPage%3A%20ERR_CONNECT_FAIL%0D%0AErr%3A%20(60)%20Operation%20timed%20out%0D%0ATimeStamp%3A%20Wed,%2017%20Oct%202018%2017%3A22%3A20%20GMT%0D%0A%0D%0AClientIP%3A%20192.168.0.40%0D%0AServerIP%3A%20localhost%0D%0A%0D%0AHTTP%20Request%3A%0D%0AGET%20%2F$discovery%2Frest%3Fversion%3Dv1%20HTTP%2F1.1%0AUser-Agent%3A%20google-api-nodejs-client%2F0.12.0%0D%0AConnection%3A%20close%0D%0AHost%3A%20localhost%3A5001%0D%0A%0D%0A%0D%0A">assist@artinfo.com.br</a>.</p>
+
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Gerado Wed, 17 Oct 2018 17:22:20 GMT por localhost (squid)</p>
+<!-- ERR_CONNECT_FAIL -->
+</div>
+</body></html>
+
+Error: 
+<html><head>
+<meta type="copyright" content="Copyright (C) 1996-2017 The Squid Software Foundation and contributors">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERRO: A URL requisitada não pode ser recuperada</title>
+<style type="text/css"><!-- 
+ /*
+ * Copyright (C) 1996-2017 The Squid Software Foundation and contributors
+ *
+ * Squid software is distributed under GPLv2+ license and includes
+ * contributions from numerous individuals and organizations.
+ * Please see the COPYING and CONTRIBUTORS files for details.
+ */
+
+/*
+ Stylesheet for Squid Error pages
+ Adapted from design by Free CSS Templates
+ http://www.freecsstemplates.org
+ Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* Page basics */
+* {
+	font-family: verdana, sans-serif;
+}
+
+html body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	font-size: 12px;
+	color: #1e1e1e;
+}
+
+/* Page displayed title area */
+#titles {
+	margin-left: 15px;
+	padding: 10px;
+	padding-left: 100px;
+	background: url('/squid-internal-static/icons/SN.png') no-repeat left;
+}
+
+/* initial title */
+#titles h1 {
+	color: #000000;
+}
+#titles h2 {
+	color: #000000;
+}
+
+/* special event: FTP success page titles */
+#titles ftpsuccess {
+	background-color:#00ff00;
+	width:100%;
+}
+
+/* Page displayed body content area */
+#content {
+	padding: 10px;
+	background: #ffffff;
+}
+
+/* General text */
+p {
+}
+
+/* error brief description */
+#error p {
+}
+
+/* some data which may have caused the problem */
+#data {
+}
+
+/* the error message received from the system or other software */
+#sysmsg {
+}
+
+pre {
+    font-family:sans-serif;
+}
+
+/* special event: FTP / Gopher directory listing */
+#dirmsg {
+    font-family: courier;
+    color: black;
+    font-size: 10pt;
+}
+#dirlisting {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#dirlisting tr.entry td.icon,td.filename,td.size,td.date {
+    border-bottom: groove;
+}
+#dirlisting td.size {
+    width: 50px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* horizontal lines */
+hr {
+	margin: 0;
+}
+
+/* page displayed footer area */
+#footer {
+	font-size: 9px;
+	padding-left: 10px;
+}
+
+
+body
+:lang(fa) { direction: rtl; font-size: 100%; font-family: Tahoma, Roya, sans-serif; float: right; }
+:lang(he) { direction: rtl; }
+ --></style>
+</head><body id="ERR_CONNECT_FAIL">
+<div id="titles">
+<h1>ERRO</h1>
+<h2>A URL requisitada não pôde ser recuperada</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>O seguinte erro foi encontrado ao tentar recuperar a URL: <a href="http://localhost:5001/$discovery/rest?">http://localhost:5001/$discovery/rest?</a></p>
+
+<blockquote id="error">
+<p><b>Conexão para ::1 falhou.</b></p>
+</blockquote>
+
+<p id="sysmsg">O sistema retornou: <i>(60) Operation timed out</i></p>
+
+<p>O host ou rede remota pode estar fora do ar. Por favor, faça a requisição novamente.</p>
+
+<p>Seu administrador do cache é <a href="mailto:assist@artinfo.com.br?subject=CacheErrorInfo%20-%20ERR_CONNECT_FAIL&amp;body=CacheHost%3A%20localhost%0D%0AErrPage%3A%20ERR_CONNECT_FAIL%0D%0AErr%3A%20(60)%20Operation%20timed%20out%0D%0ATimeStamp%3A%20Wed,%2017%20Oct%202018%2017%3A22%3A20%20GMT%0D%0A%0D%0AClientIP%3A%20192.168.0.40%0D%0AServerIP%3A%20localhost%0D%0A%0D%0AHTTP%20Request%3A%0D%0AGET%20%2F$discovery%2Frest%3Fversion%3Dv1%20HTTP%2F1.1%0AUser-Agent%3A%20google-api-nodejs-client%2F0.12.0%0D%0AConnection%3A%20close%0D%0AHost%3A%20localhost%3A5001%0D%0A%0D%0A%0D%0A">assist@artinfo.com.br</a>.</p>
+
+<br>
+</div>
+
+<hr>
+<div id="footer">
+<p>Gerado Wed, 17 Oct 2018 17:22:20 GMT por localhost (squid)</p>
+<!-- ERR_CONNECT_FAIL -->
+</div>
+</body></html>
+
+    at new RequestError (C:\Users\Pichau\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\googleapis\node_modules\google-auth-library\lib\transporters.js:34:42)
+    at Request._callback (C:\Users\Pichau\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\googleapis\node_modules\google-auth-library\lib\transporters.js:108:23)
+    at Request.self.callback (C:\Users\Pichau\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at emitTwo (events.js:126:13)
+    at Request.emit (events.js:214:7)
+    at Request.<anonymous> (C:\Users\Pichau\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1163:10)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at IncomingMessage.<anonymous> (C:\Users\Pichau\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1085:12)
+    at Object.onceWrapper (events.js:313:30)
+[warn] !  functions: Failed to emulate helloWorld
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
+[info] Shutting down...

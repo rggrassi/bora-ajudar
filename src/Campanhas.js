@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Campanha = ({ campanhas }) => {
+const Campanha = ({ campanhas, isFetching }) => {
+
     return (
         <div>
             <section className="page-section">
@@ -23,11 +24,10 @@ const Campanha = ({ campanhas }) => {
                     </div>
                 </div>
             </section>
-            { Object
+            {  Object
                 .keys(campanhas)
                 .map(key => renderCampanha(campanhas[key]))
-            }
-            
+            }            
         </div>    
     )
 }
@@ -48,7 +48,7 @@ const renderCampanha = campanha => {
                     <div className="product-item-description d-flex ml-auto">
                         <div className="p-5 rounded">
                             <p className="mb-0">{campanha.descricao}</p>
-                            { campanha.tipo === 'dinheiro' &&
+                            { campanha.tipo === 'doacao' &&
                                 <div>
                                     <div className="progress">
                                         <div className="progress-bar bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
